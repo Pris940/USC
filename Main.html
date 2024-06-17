@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A comprehensive portfolio showcasing Brian's work, including his About, backstage experiences, written works, and contact information. Explore his projects and learn more about his skills and accomplishments.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="Styles.css">
+
+    <title>Portfolio</title>
+
+    <style>
+        .circleContainer {
+            float: right;
+            margin: 0px 0px 10px 20px;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .wrappedImage {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .item {
+            overflow: hidden;
+            position: relative;
+
+            aspect-ratio: 1 / 1;
+
+            flex: 0 0 calc(33.33% - 20px);
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
+        .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .item2 {
+            transform: scale(0.90);
+            align-items: center;
+        }
+
+        .backstageImg {
+            object-position: 37%;
+        }
+
+        .caption {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            color: #fff;
+            font-size: 2em;
+            visibility: hidden;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        .item:hover .caption {
+            visibility: visible;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+    <div class="navbar flexContainer">
+        <p class="nameItem">BRIAN MENDOZA</p>
+        <ul class="topMenu menuItem">
+
+            <li><a href="Main.html">Home</a></li>
+
+            <li><a href="About.html">About</a></li>
+
+            <li><a href="TheatricalWork.html">Theatrical Work</a></li>
+
+            <li><a href="Contact.html">Contact</a></li>
+        
+        </ul> <!-- top menu -->
+    </div> <!-- Nav Bar -->
+
+
+    <div class="main">
+        <div class="circleContainer">
+            <img src="img/bio.jpg" alt="Brian Mendoza headshot" class="wrappedImage">
+        </div>
+
+        <div class="highlightContainer">
+            <div class="highlight"></div>
+            <h1 class="bigText">Brian Mendoza</h1>
+        </div> <!-- hightlight container -->
+
+        <div class="bodyText">
+
+            <p>Brian Mendoza is an actor, playwright, and musician living in Los Angeles, CA. He has appeared as an
+                extra in film and television programs such as The Goldbergs, Jarhead, and Veronica Mars, and has
+                performed music for The Masked Singer, Coachella, BottleRock, and live sporting events. He is currently
+                refining his skills at the University of Southern California's School of Dramatic Arts.</p>
+
+        </div> <!-- body text -->
+
+
+        <h2>Explore his contributions and involvement here:</h2>
+
+        <div class="flexContainer">
+            <div class="item item2">
+                <img src="img/backstage.jpg" alt="New Works Festival Year 3" class="backstageImg">
+                <a href="TheatricalWork.html"><div class="caption">Backstage</div></a>
+            </div>
+
+            <div class="item">
+                <img src="img/catalina.jpg" alt="Brian performing at Catalina Island">
+                <a href="About.html"><div class="caption">About</div></a>
+            </div>
+
+            <div class="item item2">
+                <img src="img/written.png" alt="Students doing a live reading at About Face">
+                <a href="TheatricalWork.html"><div class="caption">Written Work</div></a>
+            </div>
+        </div>
+
+    </div> <!-- main -->
+
+    <div class="footer">
+        <p>&#169; 2024 Brian Mendoza</p>
+    </div>
+
+</body>
+
+
+</html>
