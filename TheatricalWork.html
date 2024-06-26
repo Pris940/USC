@@ -3,22 +3,56 @@
 <html>
 
 <head>
+    <link rel="icon" type="image/svg+xml" href="img/cloud.svg">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="A comprehensive portfolio showcasing Brian's work, including his resume, backstage experiences, written works, and contact information. Explore his projects and learn more about his skills and accomplishments.">
+        content="Explore Brian Mendoza's theatrical work, including his backstage experiences in productions like the Rocky Horror Picture Show and the New Works Festival. Discover his written works and contributions to events like About Face.">
 
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="Styles.css">
-
-    <title>Portfolio</title>
+    <title>Portfolio | Theatrical Work</title>
 
     <style>
+        .containerR {
+            float: right;
+            margin: 0px 0px 20px 20px;
+            width: auto;
+            height: 290px;
+            overflow: hidden;
+        }
+
+        .containerL {   
+            float: left;
+            margin: 0px 25px 20px 0px;
+            width: auto;
+            height: 290px;
+            overflow: hidden;
+        }
+
+        .wrappedImage {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: left;
+        }
+
+        .pageSection {
+            width: 100%;
+            margin: 50px 0px;
+        }
+
+        h2 {
+            margin: 0px;
+        }
+
 
     </style>
+
+    <link rel="stylesheet" href="Styles.css">
 
 </head>
 
@@ -26,19 +60,64 @@
     <div class="navbar flexContainer">
         <p class="nameItem">BRIAN MENDOZA</p>
         <ul class="topMenu menuItem">
-
-            <li><a href="Index.html">Home</a></li>
-
+            <li><a href="index.html">Home</a></li>
             <li><a href="About.html">About</a></li>
-
-            <li><a href="TheatricalWork.html">Theatrical Work</a></li>
-
+            <li class="active"><a href="TheatricalWork.html">Theatrical Work</a></li>
             <li><a href="Contact.html">Contact</a></li>
-        
         </ul> <!-- top menu -->
     </div> <!-- Nav Bar -->
 
     <div class="main">
+
+        <div class="highlightContainer">
+            <div class="highlight"><h1 class="bigText">Theatrical Work</h1></div>
+        </div>
+
+        
+        <h2 id="BSW">Backstage Work</h2>
+
+
+        <div class="pageSection">
+            <div class="containerR">
+                <img src="img/Rocky.jpg" alt="Dorothy and Friends THeatre Company Rocky promotional poster" class="wrappedImage">
+            </div>
+
+            <h3>Rocky Horror Picture Show</h3>
+
+            <div class="bodyText">
+                <p>Brian's first experience working in theatre actually came about as a result of a movie. In Spring of 2023, he served as a props runner for the USC Dorothy and Friends Theatre Company when they put on a shadow cast production of the Rocky Horror Picture Show. He was responsible for handling props in the small corner on the wings stage left in USC's now-demolished small black box, the Massman Theatre. Near the end of the showing, he and his counterpart from stage right would also handle deck crew duties, moving tables and chairs as necessary for the performance.</p>
+            </div>
+        </div>
+
+
+        <div class="pageSection">
+            <div class="containerL">
+                <img src="img/NWF.png" alt="New Works Festival Year 3 promotional poster" class="wrappedImage">
+            </div>
+            
+            <h3>Somewhere Someone is Traveling Furiously Towards You</h3>
+
+            <div class="bodyText">
+                <p>All students in the USC School of Dramatic Arts, no matter the creative field that they are working towards, are required to take at least one course about the backstage components of theatrical production. They learn the basics of each theatrical field, and crew one of the productions being put on by SDA. In Spring 2024, as part of this course, Brian crewed the SDA MFA New Works Festival, doing Sound Board for <em>Somewhere Someone is Traveling Furiously Towards You</em>, written by SDA MFA Playwriting 3rd year Marilyn Scotland, with direction by Alison De La Cruz. He learned the basics of QLab operation from Sound Designer Alma Reyes-Thomas, and gained some insight into the process of developing sound design for a live theatre setting.</p>
+            </div>
+        </div>
+
+        <h2 id="WW">Written Work</h2>
+
+        <div class="pageSection">
+            <h3>About Face: Women, War, and Re-envisioning Troy</h3>
+
+            <div class="containerR">
+                <img src="img/aboutFace.jpg" alt="About Face: Women, War, and Re-envisioning Troy promotional poster" class="wrappedImage">
+            </div>
+
+            <div class="bodyText">
+                <p>The 2023-2024 USC Visions and Voices season featured a pair of events known as About Face: Women, War, and Re-envisioning Troy. In it, participants and audience members were invited to reflect on the way women were perceived and treated in the history of our society, and our university, and how myths of old could take on new meanings in today's world. Brian's submission for the event, <em>Cass's Cake</em>, was one of the short works selected for a staged reading on the night of the first event, with direction by Nico Fife. In the work, Brian touches upon societal tendencies of putting the needs and wants of men above those of their female counterparts.
+                </p>
+            </div>
+            
+        </div>
+        
 
     </div>
 
@@ -49,3 +128,5 @@
 </body>
 
 </html>
+
+

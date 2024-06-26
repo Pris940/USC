@@ -3,44 +3,155 @@
 <html>
 
 <head>
+    <link rel="icon" type="image/svg+xml" href="img/cloud.svg">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="A comprehensive portfolio showcasing Brian's work, including his resume, backstage experiences, written works, and contact information. Explore his projects and learn more about his skills and accomplishments.">
+        content="Contact Brian Mendoza directly through this page. Submit your comments, questions, or concerns, and learn more about his professional background and projects.">
 
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="Styles.css">
-
-    <title>Portfolio</title>
+    <title>Portfolio | Contact</title>
 
     <style>
+        .contactBG {
+            background-color: #3a353e;
+            width: 85%;
+            margin: auto;
+            margin-top: 30px;
+            padding: 40px 50px;
+        }
+
+        .contactBG .formGroup {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        .formGroup input,
+        .formGroup textarea {
+            width: calc(100% - 11px);
+            height: 60px;
+            margin: 10px 0px 20px;
+            padding-left: 10px;
+            
+            border: none;
+            border-radius: 10px;
+
+            font-family: "Courier Prime", monospace;
+        }
+
+        .contactBG button {
+            border: none;
+            border-radius: 5px;
+            
+            background-color: #c64eea;
+            color: #f4f1f8;
+            font-size: 1.1em;
+            cursor: pointer;
+
+            width: 100%;
+            height: 60px;
+            margin-top: 10px;
+        }
+        
+        .contactBG .halfWidthItems {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .contactBG .halfWidth {
+            flex: 0 0 calc(50% - 20px);
+        }
+        
+        .formGroup #cqc {
+            height: 180px;
+        }
 
     </style>
+
+    <link rel="stylesheet" href="Styles.css">
 
 </head>
 
 <body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script src="jquery.validate.min.js"></script>
+    <script>
+        $("form").validate();
+    </script>
+
     <div class="navbar flexContainer">
         <p class="nameItem">BRIAN MENDOZA</p>
         <ul class="topMenu menuItem">
-
-            <li><a href="Index.html">Home</a></li>
-
+            <li><a href="index.html">Home</a></li>
             <li><a href="About.html">About</a></li>
-
             <li><a href="TheatricalWork.html">Theatrical Work</a></li>
-
-            <li><a href="Contact.html">Contact</a></li>
-        
+            <li class="active"><a href="Contact.html">Contact</a></li>
         </ul> <!-- top menu -->
     </div> <!-- Nav Bar -->
 
     <div class="main">
 
-    </div>
+        <div class="highlightContainer">
+            <div class="highlight"><h1 class="bigText">Contact Brian Here:</h1></div>
+        </div>
+
+
+        <div class="contactBG">
+            <form id="form" action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="99842aef-b400-427f-be01-0c997a9d4206">
+
+                <div class="formGroup halfWidthItems">
+
+                    <div class="halfWidth">
+                        <label for="firstName">First Name:</label>
+                        <input required type="text" id="firstName" placeholder="Tommy" name="First name">
+                    </div>
+
+                    <div class="halfWidth">
+                        <label for="lastName">Last Name:</label>
+                        <input required type="text" id="lastName" placeholder="Trojan" name="Last name">
+                    </div>
+                    
+                </div>
+
+
+                <div class="formGroup halfWidthItems">
+
+                    <div class="halfWidth">
+                        <label for="email">Email:</label>
+                        <input required type="email" id="email" placeholder="ttrojan@gmail.com" name="Email">
+                    </div>
+
+                    <div class="halfWidth">
+                        <label for="number">Phone Number:</label>
+                        <input type="tel" id="number" placeholder="(123) 456-7890" name="Phone number">
+                    </div>
+                    
+                </div>
+        
+
+                <div class="formGroup">
+                    <label for="cqc">Comments, questions, concerns:</label>
+                    <input required type="text" id="cqc" placeholder="Your Message" name="Message">
+                </div>
+
+                <input type="hidden" name="redirect" value="https://uscwebdev.github.io/itp104-submissions-Pris940/Final_Project/Confirmation.html">
+
+                <div class="buttonContainer">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div> <!-- contact BG -->
+
+    </div> <!-- main -->
 
     <div class="footer">
         <p>&#169; 2024 Brian Mendoza</p>

@@ -3,22 +3,76 @@
 <html>
 
 <head>
+    <link rel="icon" type="image/svg+xml" href="img/cloud.svg">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="A comprehensive portfolio showcasing Brian's work, including his resume, backstage experiences, written works, and contact information. Explore his projects and learn more about his skills and accomplishments.">
+        content="Discover Brian Mendoza's professional journey through his skills, training, and detailed resume. Explore his diverse theatrical background and expertise in voice, dialects, acting, and more.">
 
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="Styles.css">
-
-    <title>Portfolio</title>
+    <title>Portfolio | About</title>
 
     <style>
+        .itemLeft {
+            flex: 0 0 calc(50% - 30px);
+            margin: 15px 30px 0px 0px;
+            box-sizing: border-box;
+        }
+
+        .itemRight {
+            flex: 0 0 calc(50% - 30px);
+            margin: 15px 0px 0px 30px;
+            box-sizing: border-box;
+        }
+
+        .pdfContainer {
+            aspect-ratio: 8.5 / 11.4;
+            width: auto;
+        }
+
+        .itemLeft h2,
+        .itemRight h2 {
+            text-align: center;
+            font-size: 1.75em;
+            margin-bottom: 1.25em;
+        }
+
+        .itemEntry {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 0px;
+        }
+
+        .columnEmph {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .marginSmall {
+            margin: 20px 0px;
+        }
+
+        hr {
+            margin-bottom: 40px;
+        }
+
+        .imageContainer {
+            aspect-ratio: 8 / 1.5;
+            background-image: url(img/tmb.jpg);
+            background-size: 175%;
+            background-position: center;
+            border: 2px solid #000;
+            margin-top: 45px;
+        }
 
     </style>
+
+    <link rel="stylesheet" href="Styles.css">
 
 </head>
 
@@ -26,22 +80,102 @@
     <div class="navbar flexContainer">
         <p class="nameItem">BRIAN MENDOZA</p>
         <ul class="topMenu menuItem">
-
-            <li><a href="Index.html">Home</a></li>
-
-            <li><a href="About.html">About</a></li>
-
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="About.html">About</a></li>           
             <li><a href="TheatricalWork.html">Theatrical Work</a></li>
-
-            <li><a href="Contact.html">Contact</a></li>
-        
+            <li><a href="Contact.html">Contact</a></li>       
         </ul> <!-- top menu -->
     </div> <!-- Nav Bar -->
 
+
     <div class="main">
 
-    </div>
+        <div class="highlightContainer">
+            <div class="highlight"><h1 class="bigText">About</h1></div>
+        </div>
 
+        <div class="flexContainer">
+            <div class="itemLeft">
+                <h2>Skills and Training</h2>
+
+                <div class="itemEntry columnEmph">
+                    <div>Training</div>
+                    <div>Teacher</div>
+                </div>
+
+                <hr>
+
+                <div class="itemEntry">
+                    <div>Linklater Breathing and Voice</div>
+                    <div class="go">Brent Blair</div>
+                </div>
+
+                <div class="itemEntry">
+                    <div>Dialects, emphasis on Texas dialect</div>
+                    <div class="go">Kathleen Dunn-Muzingo</div>
+                </div>
+
+                <div class="itemEntry marginSmall">
+                    <div>Acting</div>
+                    <div>Jeremiah O'Brien</div>
+                </div>
+
+                <div class="itemEntry marginSmall">
+                    <div></div>
+                    <div>Anita Dashiell-Sparks</div>
+                </div>
+
+                <div class="itemEntry marginSmall">
+                    <div></div>
+                    <div>Paul Urcioli</div>
+                </div>
+
+                <div class="itemEntry">
+                    <div>Improv</div>
+                    <div>Paul Hungerford</div>
+                </div>
+
+                <div class="itemEntry">
+                    <div>English Language Dubbing</div>
+                    <div class="go">Esther K. Chae</div>
+                </div>
+
+                <div class="itemEntry">
+                    <div>Intro to Sound Design</div>
+                    <div class="go">Phil Allen</div>
+                </div>
+
+                <div class="itemEntry">
+                    <div>Magic</div>
+                    <div>Matthew Felten</div>
+                </div>
+
+                <div class="itemEntry marginSmall">
+                    <div>Playwriting</div>
+                    <div>Boni Alvarez</div>
+                </div>
+
+                <div class="itemEntry marginSmall">
+                    <div></div>
+                    <div>Paula Cizmar</div>
+                </div>
+
+                <div class="imageContainer"></div>
+
+            </div>
+
+            <div class="itemRight">
+                <h2>Resume</h2>
+                <div class="pdfContainer">
+                    <iframe src="Resume.pdf" width="100%" height="100%"></iframe>
+                </div>
+            </div>   
+        </div> <!-- flex container -->
+        
+
+    </div> <!-- main -->
+
+    
     <div class="footer">
         <p>&#169; 2024 Brian Mendoza</p>
     </div>
